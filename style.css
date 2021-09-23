@@ -1,0 +1,155 @@
+body,
+html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  max-width: 100vw;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 24px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #d2872c;
+  font-weight: 800;
+  font-size: 1.5rem;
+  padding: 0 24px;
+}
+
+.hamburger {
+  width: 32px;
+  height: 32px;
+  color: #766f68;
+}
+
+.navlinks {
+  display: none;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0;
+}
+
+main img {
+  width: 75%;
+  margin: auto;
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 75%;
+  margin: auto;
+  color: #766f68;
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+button {
+  color: white;
+  background-color: #d2872c;
+  border: none;
+  padding: 1rem;
+  width: 80%;
+  margin: auto;
+  border-radius: 16px;
+  font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    width: 90vw;
+    margin: 3rem auto;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navbar {
+    width: 95%;
+  }
+
+  .navbar a {
+    font-size: 2rem;
+  }
+
+  .navlinks {
+    display: flex;
+    gap: 20px;
+  }
+
+  .navlinks a {
+    color: #555;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 0;
+  }
+
+  main {
+    flex-direction: row-reverse;
+    position: relative;
+    width: 95%;
+    margin-left: 50px;
+  }
+
+  main img {
+    position: absolute;
+    right: 0;
+    width: 65%;
+    padding-top: 50px;
+  }
+
+  main div {
+    position: absolute;
+    left: 0;
+    gap: 40px;
+  }
+
+  h1 {
+    font-size: 4rem;
+    max-width: 70%;
+    text-align: start;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    max-width: 50%;
+    text-align: start;
+  }
+
+  button {
+    max-width: 35%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1.25rem;
+    margin-left: 0;
+  }
+}
